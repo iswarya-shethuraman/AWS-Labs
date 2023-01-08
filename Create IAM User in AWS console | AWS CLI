@@ -21,7 +21,7 @@ For Programmatic access, select the checkbox for “Access key – programmatic 
 
 *	Use command ‘aws iam create-user --user-name demouser2’ to create a new user through aws CLI
                  
-*	To set the password for the new user , use command ‘aws iam create-login-profile --user-name demouser2 --password <enter_password> --password-reset-required’ 
+*	To set the password for the new user , use command ‘aws iam create-login-profile --user-name demouser2 --password <enter_password> --no-password-reset-required’ 
 
 *	Create access keys for the user with command ‘aws iam create-access-key –user-name demouser2’ 
 
