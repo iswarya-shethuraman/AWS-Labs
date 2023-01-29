@@ -1,13 +1,13 @@
-### Step 1: Choose an Amazon Machine Image (AMI)
+**Step 1: Choose an Amazon Machine Image (AMI)**
 
  * Choose the Amazon Linux 2 AMI (at the top), click Select.
 
-### Step 2: Choose an Instance Type
+**Step 2: Choose an Instance Type**
 
  * Select  t3.micro
  * Click Next: Configure Instance Details
 
-### Step 3: Configure Instance Details
+**Step 3: Configure Instance Details**
 
 * Configure these settings:
 
@@ -15,13 +15,13 @@
 *   Subnet: Public Subnet
 *   Click Next: Add Storage
 
-### Step 4: Add Storage
+**Step 4: Add Storage**
 
 * You will use the default disk size, so no changes are required.
 
 * Click Next: Add Tags
 
-### Step 5: Add Tags
+**Step 5: Add Tags**
 
 * Tags allow you to categorize your AWS resources in different ways, such as by purpose, owner, or environment. 
 
@@ -33,7 +33,7 @@ This name will appear on the instance in the EC2 management console.
 
 * Click Next: Configure Security Group
 
-### Step 6: Configure Security Group
+**Step 6: Configure Security Group**
 
 * Configure these settings:
 
@@ -42,7 +42,7 @@ Select Add rule and configure the rule with the following settings:
  Type: HTTP
  Source: Anywhere-IPv4
 
-### Step 7: Configuring advanced details
+**Step 7: Configuring advanced details**
 
 * Expand the Advanced details pane.
 * Copy the following commands, and paste them into the User data text box.
@@ -62,7 +62,7 @@ Configure the web server to automatically start on boot
 Activate the Web server
 Create a simple web page
 
-### Step 8: Review Instance Launch
+**Step 8: Review Instance Launch**
 
 * Click Launch
 
@@ -79,7 +79,7 @@ The Web Server will appear in a pending state, which means it is being launched.
  Instance State:  Running
  Status Checks:   2/2 checks passed
 
-### Step 9:Access the Web Server
+**Step 9:Access the Web Server**
 
 * Select the instance by checking the box and selecting the Details tab.
 
