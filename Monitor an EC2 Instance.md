@@ -1,4 +1,4 @@
-Objectives
+**Objectives**
 
 * Create an Amazon SNS notification
 * Configure a CloudWatch alarm
@@ -13,7 +13,7 @@ yum -y update
 amazon-linux-extras install epel -y
 yum install stress -y
 ```
-Task 1: Configure Amazon SNS
+**Task 1: Configure Amazon SNS**
 
 * In the AWS Management Console, enter SNS in the search bar, and then choose Simple Notification Service.
 
@@ -43,7 +43,7 @@ Task 1: Configure Amazon SNS
 * Go back to the AWS Management Console. In the left navigation pane, choose Subscriptions.
  The Status should now be  Confirmed.
 
-Task 2: Create a CloudWatch alarm
+**Task 2: Create a CloudWatch alarm**
 
 View some metrics and logs stored within CloudWatch. You then create a CloudWatch alarm to initiate and send an email to your SNS topic if the Stress Test EC2 instance increases to more than 60 percent CPU utilization.
 
@@ -103,7 +103,7 @@ View some metrics and logs stored within CloudWatch. You then create a CloudWatc
 
 * Review the Preview and create page, and then choose Create alarm.
 
-Task 3: Test the Cloudwatch alarm
+**Task 3: Test the Cloudwatch alarm**
 
 The Stress Test EC2 instance and run a command that stresses the CPU load to 100 percent. This increase in CPU utilization activates the CloudWatch alarm, which causes Amazon SNS to send an email notification to the email address associated with the SNS topic.
 
@@ -135,7 +135,7 @@ top
 
 * Navigate to your email inbox for the email address that you used to configure the Amazon SNS subscription. You should see a new email notification from AWS Notifications.
 
-Task 4: Create a CloudWatch dashboard
+**Task 4: Create a CloudWatch dashboard**
  CloudWatch dashboards to create customized views of the metrics and alarms for your AWS resources.
 
 * Go to the CloudWatch section in the AWS console. In the left navigation pane, choose Dashboards.
